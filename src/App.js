@@ -10,6 +10,7 @@ import AllReviews from './components/AllReviews/AllReviews';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TopCompanies from './components/TopCompanies/TopCompanies';
+import SingleResource from './components/SingleResource/SingleResource';
 
 function App() {
   return (
