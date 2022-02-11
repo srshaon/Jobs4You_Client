@@ -9,6 +9,8 @@ import Review from './components/Review/Review';
 import AllReviews from './components/AllReviews/AllReviews';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import TopCompanies from './components/TopCompanies/TopCompanies';
+import SingleResource from './components/SingleResource/SingleResource';
 
 function App() {
   return (
@@ -35,6 +37,11 @@ function App() {
             <Route path='/allreviews'>
               <AllReviews></AllReviews>
             </Route>
+
+            {/* Rifat's Route */}
+            <Route path='/resource/:id'>
+            <SingleResource />
+          </Route>
           </Switch>
         </BrowserRouter>
       </AuthProvider>
