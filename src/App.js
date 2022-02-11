@@ -38,9 +38,9 @@ function App() {
             </Route>
 
             {/* Rifat's Route */}
-            <Route path='/top'>
-              <TopCompanies></TopCompanies>
-            </Route>
+            <Route path='/resource/:id'>
+            <SingleResource />
+          </Route>
           </Switch>
         </BrowserRouter>
       </AuthProvider>
