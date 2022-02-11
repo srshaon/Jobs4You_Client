@@ -9,6 +9,15 @@ import Review from './components/Review/Review';
 import AllReviews from './components/AllReviews/AllReviews';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import TopCompanies from './components/TopCompanies/TopCompanies';
+import SingleResource from './components/SingleResource/SingleResource';
+import Categories from './components/Categories/Categories';
+import AllCategoriesJobs from './components/AllCategoriesJobs/AllCategoriesJobs';
+import JobStatus from './components/JobStatus/JobStatus';
+import AllJobStatus from './components/AllJobStatus/AllJobStatus';
+import Locations from './components/Locations/Locations';
+import AllLocationJobs from './components/AllLocationJobs/AllLocationJobs';
+import FilteredJobs from './components/Filteredjobs/Filteredjobs';
 
 function App() {
   return (
@@ -34,6 +43,33 @@ function App() {
             </Route>
             <Route path='/allreviews'>
               <AllReviews></AllReviews>
+            </Route>
+
+            {/* Rifat's Route */}
+            <Route path='/resource/:id'>
+              <SingleResource />
+            </Route>
+            {/* Sadia's Route */}
+            <Route path='/categories'>
+              <Categories></Categories>
+            </Route>
+            <Route path='/categoryjobs'>
+              <AllCategoriesJobs></AllCategoriesJobs>
+            </Route>
+            <Route path='/status'>
+              <JobStatus></JobStatus>
+            </Route>
+            <Route path='/jobstatus'>
+              <AllJobStatus></AllJobStatus>
+            </Route>
+            <Route path='/locations'>
+              <Locations></Locations>
+            </Route>
+            <Route path='/locationjobs'>
+              <AllLocationJobs></AllLocationJobs>
+            </Route>
+            <Route path='/filter'>
+              <FilteredJobs></FilteredJobs>
             </Route>
           </Switch>
         </BrowserRouter>
