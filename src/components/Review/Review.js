@@ -55,7 +55,7 @@ const Review = () => {
                         <textarea maxLength="300" className="m-0" placeholder="Your Valuable Opinion(max 300 characters)" defaultValue="" {...register("review")} />
 
                         <br />
-                        <input type="number" min="0" max="5" placeholder="Rating(Out of 5)" defaultValue="" {...register("rating", { required: true })} />
+                        <input style={{ display: 'none' }} type="number" min="0" max="5" placeholder="Rating(Out of 5)" defaultValue="" {...register("rating", { required: true })} />
                         <br />
 
                         {errors.rating && <span className="error">This field is required</span>}
