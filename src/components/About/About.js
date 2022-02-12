@@ -1,4 +1,5 @@
 import React from 'react';
+import MobileView from '../../assets/Images/view-mobile.png';
 import './About.css';
 
 const About = () => {
@@ -45,7 +46,7 @@ const About = () => {
 
                     <div className="col-lg-4 col-12">
                         <div className="d-flex justify-content-center">
-                            <img style={{height: '580px', marginTop: '-50px'}} className="mb-auto" src="./images/snap-mobile.png" alt="" />
+                            <img style={{height: '580px', marginTop: '-50px'}} className="mb-auto" src={MobileView} alt="" />
                         </div>
                     </div>
 

@@ -20,6 +20,7 @@ import AllLocationJobs from "./components/AllLocationJobs/AllLocationJobs";
 import FilteredJobs from "./components/Filteredjobs/Filteredjobs";
 import Header from "./components/Header/Haeder";
 import Footer from "./components/Footer/Footer";
+import JobDetails from "./components/JobDetails/JobDetails";
 
 
 function App() {
@@ -75,7 +76,9 @@ function App() {
             <Route path="/filter">
               <FilteredJobs></FilteredJobs>
             </Route>
-
+            <Route path="/jobdetails/:jobId">
+              <JobDetails></JobDetails>
+            </Route>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>
