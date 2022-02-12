@@ -20,6 +20,8 @@ import AllLocationJobs from "./components/AllLocationJobs/AllLocationJobs";
 import FilteredJobs from "./components/Filteredjobs/Filteredjobs";
 import Header from "./components/Header/Haeder";
 import Footer from "./components/Footer/Footer";
+import JobDetails from "./components/JobDetails/JobDetails";
+
 
 function App() {
   return (
@@ -56,23 +58,26 @@ function App() {
             <Route path="/categories">
               <Categories></Categories>
             </Route>
-            <Route path="/categoryjobs">
+            <Route path="/categoryjobs/:categoryName">
               <AllCategoriesJobs></AllCategoriesJobs>
             </Route>
             <Route path="/status">
               <JobStatus></JobStatus>
             </Route>
-            <Route path="/jobstatus">
+            <Route path="/jobstatus/:statusName">
               <AllJobStatus></AllJobStatus>
             </Route>
             <Route path="/locations">
               <Locations></Locations>
             </Route>
-            <Route path="/locationjobs">
+            <Route path="/locationjobs/:locationName">
               <AllLocationJobs></AllLocationJobs>
             </Route>
             <Route path="/filter">
               <FilteredJobs></FilteredJobs>
+            </Route>
+            <Route path="/jobdetails/:jobId">
+              <JobDetails></JobDetails>
             </Route>
           </Switch>
           <Footer></Footer>
