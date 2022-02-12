@@ -33,12 +33,9 @@ const Categories = () => {
                             <h3>{category}</h3>
 
 
-
-
-
                             <div className='d-flex justify-content-center'>
 
-                                <Link to={`/alljobs/${category}`}>
+                                <Link to={`/categoryjobs/${category}`}>
 
                                     View All Jobs
                                 </Link>

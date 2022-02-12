@@ -4,9 +4,13 @@ import Categories from '../Categories/Categories';
 import Locations from '../Locations/Locations';
 import JobStatus from '../JobStatus/JobStatus';
 import './Filteredjobs.css';
+import { Spinner } from 'react-bootstrap';
 
 const Filteredjobs = () => {
     const [control, setControl] = useState('categories');
+    if (control.length === 0) {
+        return <Spinner animation="border" variant="danger" />
+    }
     return (
         <div className=' detailbody'>
             <div className='pt-5 ms-4' >
