@@ -20,7 +20,7 @@ import AllLocationJobs from "./components/AllLocationJobs/AllLocationJobs";
 import FilteredJobs from "./components/Filteredjobs/Filteredjobs";
 import Header from "./components/Header/Haeder";
 import Footer from "./components/Footer/Footer";
-import JobDetails from "./components/JobDetails/JobDetails";
+
 
 function App() {
   return (
@@ -54,30 +54,28 @@ function App() {
               <SingleResource />
             </Route>
             {/* Sadia's Route */}
-            <Route path='/categories'>
+            <Route path="/categories">
               <Categories></Categories>
             </Route>
-            <Route path='/categoryjobs/:categoryName'>
+            <Route path="/categoryjobs/:categoryName">
               <AllCategoriesJobs></AllCategoriesJobs>
             </Route>
-            <Route path='/status'>
+            <Route path="/status">
               <JobStatus></JobStatus>
             </Route>
-            <Route path='/jobstatus/:statusName'>
+            <Route path="/jobstatus/:statusName">
               <AllJobStatus></AllJobStatus>
             </Route>
-            <Route path='/locations'>
+            <Route path="/locations">
               <Locations></Locations>
             </Route>
-            <Route path='/locationjobs/:locationName'>
+            <Route path="/locationjobs/:locationName">
               <AllLocationJobs></AllLocationJobs>
             </Route>
-            <Route path='/filter'>
+            <Route path="/filter">
               <FilteredJobs></FilteredJobs>
             </Route>
-            <Route path='/jobdetails/:jobId'>
-              <JobDetails></JobDetails>
-            </Route>
+
           </Switch>
           <Footer></Footer>
         </BrowserRouter>
