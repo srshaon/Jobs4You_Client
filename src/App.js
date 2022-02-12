@@ -76,9 +76,7 @@ function App() {
             <Route path="/filter">
               <FilteredJobs></FilteredJobs>
             </Route>
-            <Route path="/jobdetails/:jobId">
-              <JobDetails></JobDetails>
-            </Route>
+
           </Switch>
           <Footer></Footer>
         </BrowserRouter>
