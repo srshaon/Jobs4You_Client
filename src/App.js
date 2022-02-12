@@ -12,16 +12,17 @@ import "slick-carousel/slick/slick-theme.css";
 import TopCompanies from './components/TopCompanies/TopCompanies';
 import SingleResource from './components/SingleResource/SingleResource';
 import Categories from './components/Categories/Categories';
-import AllCategoriesJobs from './components/AllCategoriesJobs/AllCategoriesJobs';
+import AllCategoriesJobs from './components/AllCategoriesJobs/AllCategoriesJobs'
 import JobStatus from './components/JobStatus/JobStatus';
 import AllJobStatus from './components/AllJobStatus/AllJobStatus';
 import Locations from './components/Locations/Locations';
 import AllLocationJobs from './components/AllLocationJobs/AllLocationJobs';
 import FilteredJobs from './components/Filteredjobs/Filteredjobs';
+import JobDetails from './components/JobDetails/JobDetails';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <AuthProvider>
         <BrowserRouter>
           <Switch>
@@ -53,23 +54,26 @@ function App() {
             <Route path='/categories'>
               <Categories></Categories>
             </Route>
-            <Route path='/categoryjobs'>
+            <Route path='/categoryjobs/:categoryName'>
               <AllCategoriesJobs></AllCategoriesJobs>
             </Route>
             <Route path='/status'>
               <JobStatus></JobStatus>
             </Route>
-            <Route path='/jobstatus'>
+            <Route path='/jobstatus/:statusName'>
               <AllJobStatus></AllJobStatus>
             </Route>
             <Route path='/locations'>
               <Locations></Locations>
             </Route>
-            <Route path='/locationjobs'>
+            <Route path='/locationjobs/:locationName'>
               <AllLocationJobs></AllLocationJobs>
             </Route>
             <Route path='/filter'>
               <FilteredJobs></FilteredJobs>
+            </Route>
+            <Route path='/jobdetails/:jobId'>
+              <JobDetails></JobDetails>
             </Route>
           </Switch>
         </BrowserRouter>
