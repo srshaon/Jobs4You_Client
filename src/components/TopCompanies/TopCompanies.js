@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
+import LogoWallex from '../../assets/Images/logo-wallex.png';
 
 const TopCompanies = () => {
     const settings = {
@@ -39,67 +40,67 @@ const TopCompanies = () => {
       };
     return (
         <div>
-            <div style={{marginBottom: '100px'}} class="container">
+            <div style={{marginBottom: '100px'}}>
                 <div style={{}} className="shadow-lg py-3 rounded">
                     <Slider {...settings}>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="d-flex justify-content-center">
-                            <img style={{maxWidth: '100px'}} src="./images/wallex.png" alt="" />
+                            <img style={{maxWidth: '100px'}} src={LogoWallex} alt="" />
                         </div>
                     </div>
                     </Slider>
