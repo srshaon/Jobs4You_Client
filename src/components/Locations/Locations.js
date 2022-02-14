@@ -30,7 +30,7 @@ const Locations = () => {
 
                             <div className='d-flex justify-content-center'>
 
-                                <Link to={`/joblocations/${location}`}>
+                                <Link to={`/locationjobs/${location}`}>
 
                                     View All Jobs
                                 </Link>
