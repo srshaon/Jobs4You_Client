@@ -21,6 +21,18 @@ import FilteredJobs from "./components/Filteredjobs/Filteredjobs";
 import Header from "./components/Header/Haeder";
 import Footer from "./components/Footer/Footer";
 import JobDetails from "./components/JobDetails/JobDetails";
+import CandidatesList from "./components/CandidatesList/CandidatesList";
+import SingleCandidate from "./components/CandidatesList/SingleCandidate";
+import LatestJobs from "./components/LatestJobs/LatestJobs";
+import CareerGuide from "./components/CareerGuide/CareerGuide";
+import ResumeTips from "./components/ResumeTips/ResumeTips";
+import CoverLetterTips from "./components/CoverLetterTips/CoverLetterTips";
+import InterviewTips from "./components/InterviewTips/InterviewTips";
+import Contact from "./components/Contact/Contact";
+import Faq from "./components/Faq/Faq";
+import FaqCustom from "./components/FaqCustom/FaqCustom";
+import AddJob from "./components/AddJob/AddJob";
+import About from "./components/About/About";
 
 
 function App() {
@@ -54,6 +66,13 @@ function App() {
             <Route path="/resource/:id">
               <SingleResource />
             </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
+            <Route path="/faq">
+              <Faq></Faq>
+            </Route>
+
             {/* Sadia's Route */}
             <Route path="/categories">
               <Categories></Categories>
@@ -78,6 +97,35 @@ function App() {
             </Route>
             <Route path="/jobdetails/:jobId">
               <JobDetails></JobDetails>
+            </Route>
+            <Route path="/careerguide">
+              <CareerGuide></CareerGuide>
+            </Route>
+            <Route path="/resumetips">
+              <ResumeTips></ResumeTips>
+            </Route>
+            <Route path="/coverletter">
+              <CoverLetterTips></CoverLetterTips>
+            </Route>
+            <Route path="/interview">
+              <InterviewTips></InterviewTips>
+            </Route>
+            {/* Razu's Route */}
+            <Route path="/candidates">
+              <CandidatesList></CandidatesList>
+            </Route>
+            <Route path="/candidates/:candidateID">
+              <SingleCandidate></SingleCandidate>
+            </Route>
+            <Route path="/latestjobs">
+              <LatestJobs></LatestJobs>
+            </Route>
+            {/* Nuzhat's Route  */}
+            <Route path="/postJob">
+              <AddJob></AddJob>
+            </Route>
+            <Route path="/about">
+              <About></About>
             </Route>
           </Switch>
           <Footer></Footer>
