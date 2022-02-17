@@ -8,8 +8,14 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const [messageColor, setMessageColor] = useState('unset');
 
+    const modalRemove = (e) => {
+        e.target.style.display = 'none';
+    }
+
     const sendEmail = (e) => {
         e.preventDefault();
+
+
         e.target.style.pointerEvents = 'none';
         e.target.style.opacity = '0.5';
 
@@ -21,11 +27,11 @@ const Contact = () => {
               e.target.style.opacity = '1';
               
               setMessageColor('text-primary');
-              setMessage('Message sent successfully');
-              setTimeout(() => {
-                  setMessageColor('unset');
-                  setMessage('');
-              }, 5000);
+
+              document.getElementById('modal').style.display = 'block';
+
+              document.getElementById('modal').focus();
+
           }, (error) => {
               console.log(error.text);
 
@@ -39,6 +45,16 @@ const Contact = () => {
       };
     return (
         <div style={{paddingTop: '50px', paddingBottom: '80px', background: 'linear-gradient(-90deg, #9c9c9c60, darkgray)'}}>
+
+            <div className="d-flex justify-content-center">
+            <button id="modal" style={{border: '1px solid rgba(0, 0, 0, 0.3)', background: 'white',display: 'none', position: 'fixed', top: '50px', cursor: 'initial'}} className="w-50 shadow-lg rounded" onBlur={modalRemove}>
+                <div className="my-4">
+                    <p className={`pt-4 text-center ${messageColor}`}>Message sent successfully</p>
+                    <button className="bg-light border rounded py-2 px-4" onClick={modalRemove}>Okay!</button>
+                </div>
+            </button>
+            </div>
+
             <div className="d-flex justify-content-center mx-2 flex-wrap">
                 <div style={{width: '400px', background: 'rgba(255, 255, 255, 0.7)'}} className="shadow px-4 py-5 rounded mx-5 mb-4">
                     <form className="d-flex flex-column mx-2" ref={form} onSubmit={sendEmail}>
