@@ -8,7 +8,13 @@ const FaqCustom = () => {
     useEffect(() => {
         fetch('http://localhost:5000/customfaq')
         .then(res => res.json())
-        .then(data => setCustomFaq(data));
+        .then(data => {
+            let sortedFaq = [];
+            for (let i = (data.length - 1); i >= 0; i--) {
+                sortedFaq.push(data[i]);
+            }
+            setCustomFaq(sortedFaq);
+        });
     }, [customFaq]);
 
     const handleComment = (e) => {
