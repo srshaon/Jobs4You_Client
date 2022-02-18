@@ -1,12 +1,22 @@
-import './Pagination.css';
-
 import React from 'react';
+import ReactPaginate from 'react-paginate';
+import './Pagination.css'
 
-const Pagination = () => {
+const Pagination = ({pageCount,setPageNumber}) => {
+    const changePage=({selected})=>{
+setPageNumber(selected)
+    }
     return (
-        <div>
-
-        </div>
+        <ReactPaginate className='pagination'
+        breakLabel="..."
+        nextLabel="next >"
+        // onPageChange={handlePageClick}
+        // pageRangeDisplayed={5}
+        pageCount={pageCount}
+        onPageChange={changePage}
+        previousLabel="< previous"
+        // renderOnZeroPageCount={null}
+      />
     );
 };
 
