@@ -1,13 +1,21 @@
-import './ModalMessage.css';
-
 import React from 'react';
+import {Modal } from 'react-bootstrap';
 
-const ModalMessage = () => {
+
+const ModalMessage = ({show,setShow,message}) => {
+    
+
+  const handleClose = () => setShow(false);
+
     return (
-        <div>
-
-        </div>
+        <>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <p className='text-success'>{message}</p>
+        </Modal.Header>
+        
+      </Modal>
+    </>
     );
 };
-
 export default ModalMessage;
