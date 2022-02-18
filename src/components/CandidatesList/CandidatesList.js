@@ -1,9 +1,9 @@
 import React,{useState,useEffect} from 'react';
 import { Table,Button,InputGroup,FormControl } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import Pagination from './../React-paginate/Pagination';
-import './CandidatesList.css'
+
 import ModalMessage from './../ModalMessage/ModalMessage';
+import Pagination from './../Pagination/Pagination';
 
 const CandidatesList = () => {
     const[candidates,setCandidates]=useState([])
